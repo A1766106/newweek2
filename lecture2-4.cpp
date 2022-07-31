@@ -8,12 +8,17 @@ int main()
 
     int a[3] = {43, 477,34};
     int *ptr;
-    ptr = a;
+    ptr = &(*(a+1));
 
+    // prints *ptr = 477
     cout << "*ptr = " << *ptr << endl;
 
+    // prints a[2] = 34
     cout << "a[2] = " << *(a+2) << endl;
     
+    // prints a[2] = 34
+    cout << "a[2] = " << a[2] << endl;
+
 
     // address of a[0] is assigned to ptr
     // ptr = &a[0];
